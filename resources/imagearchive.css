@@ -1,0 +1,26 @@
+/*  The * below is used as a universal selector, so it creates default settings for your site */
+* {
+    font-size: 12pt;
+    line-height: 40pt;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0e3d7;
+}
+
+
+h1{
+    color: #301e1c;
+    font-size: 50px;
+    text-align: center;
+    font-family: "snell-roundhand-lt-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.container div {
+  background-color: #f0e3d7;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
