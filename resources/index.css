@@ -6,6 +6,10 @@
     background-color: #f0e3d7;
 }
 
+.image-archive {
+    background-color: #453024;
+    color: #6f8ea7;
+}
 
 h1{
     color: #301e1c;
@@ -16,11 +20,22 @@ h1{
     font-style: normal;
 }
 
-
-p{
+.p1 {
     text-align: left;
+    font-size: 23px;
+    color: #6f8ea7;
+    display: flex;  
+
+
+/* Layout columns */
+.left {
+    width: 60%;         
+    padding: 40px;
 }
 
+.right {
+    width: 40%;         
+}
 
 .container div {
   background-color: #f0e3d7;
@@ -29,18 +44,23 @@ p{
   font-size: 30px;
 }
 
-
-
-
-/* how you want the structure of your submissions to appear below. display: grid; and display: flex; are good places to start */
-.grid {
-
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 0;
+    margin: 20px 0;
 }
 
-/* how do you want each individual submission to appear? do they have a border: 1px black solid; etc. a different font-family, font-size or color? */
-.grid div {
-
+header a {
+    text-decoration: none; 
+    color: #6f8ea7;
+    font-size: 16pt;
 }
 
-/* some other things you should consider for css styling are: 
-html, <h1>, <p>, <div>, .classes, #IDs, img, a */
+header a:hover {
+    text-decoration: underline;
+}
+
+}
