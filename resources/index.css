@@ -12,8 +12,12 @@
 }
 
 
-.image-archive {
+#image-archive {
     background-color: #453024;
+}
+
+#image-archive h1 {
+  color: #f0e3d7;
 }
 
 h1{
@@ -27,26 +31,20 @@ h1{
 
 .p1 {
     text-align: left;
-    font-size: 23px;
+    font-size: 27px;
     color: #6f8ea7;
     display: flex;  
-}
-
-/* Layout */
-.left {
-    width: 60%;         
-    padding: 40px;
-}
-
-.right {
-    width: 40%;         
+    width: 60%;
+    margin-left: 40px;
+    margin-bottom: 24px;   /* space between paragraphs */
+    text-indent: 2em;
 }
 
 .container div {
   background-color: #f0e3d7;
-  margin: 10px;
-  padding: 20px;
   font-size: 30px;
+  margin: 0 auto;
+  padding: 200px;
 }
 
 header ul {
@@ -68,4 +66,89 @@ header a:hover {
     text-decoration: underline;
 }
 
+.text-image {
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+    padding: 70px;
+}
 
+.text-image img {
+    width: 400px; 
+    height: auto;
+    background-color: #301e1c; 
+    padding: 30px;        
+}
+
+.frame-middle {
+    background-color: #ceafaa; /* mid tone */
+    padding: 14px;
+}
+
+.frame-inner {
+    background-color: #f0e3d7; /* light */
+    padding: 10px;
+}
+
+.frame-inner img {
+    display: block;
+}
+
+
+.frame-inner {
+    position: relative; /* anchors the caption to the image */
+}
+
+.frame-inner img {
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
+.image-caption {
+    position: absolute;
+    top: -100px;              /* puts it ABOVE the image */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #6f8ea7;
+    font-style: italic;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 56%;
+  left: 80%;
+  transform: translate(-40%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
