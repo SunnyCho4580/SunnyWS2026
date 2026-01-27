@@ -17,11 +17,16 @@
 }
 
 #image-archive h1 {
-  color: #f0e3d7;
+    color: #f0e3d7;
+}
+
+#image-archive header{
+    border-bottom: 4px dotted #f0e3d7; /* color + thickness */
+
 }
 
 h1{
-    color: #301e1c;
+    color: #3a1c18;
     font-size: 70px;
     text-align: center;
     font-family: "snell-roundhand-lt-std", sans-serif;
@@ -36,8 +41,8 @@ h1{
     display: flex;  
     width: 60%;
     margin-left: 40px;
-    margin-bottom: 24px;   /* space between paragraphs */
-    text-indent: 2em;
+    line-height: 1.6; /* more space between lines */
+    margin-bottom: 17px; /* space between paragraphs */
 }
 
 .container div {
@@ -54,6 +59,12 @@ header ul {
     gap: 190px;
     padding: 0;
     margin: 20px 0;
+}
+
+header {
+  border-bottom: 4px dotted #3a1c18; /* color + thickness */
+  padding-bottom: 1px; /* space between nav and line */
+  margin-bottom: 40px;  /* space below the line */
 }
 
 header a {
@@ -113,42 +124,10 @@ header a:hover {
     font-size: 20px;
     color: #6f8ea7;
     font-style: italic;
+    white-space: nowrap
 }
 
-.container {
-  position: relative;
-  width: 50%;
-}
+/* code below is for stories tab for answer squares */
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
 
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 56%;
-  left: 80%;
-  transform: translate(-40%, -50%);
-}
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
