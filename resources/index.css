@@ -6,7 +6,7 @@
 }
 
 .pink-page {
-    background-color: #f0e3d7;
+    background-color: #fbf2ea;
 }
 
 
@@ -140,9 +140,9 @@ header a:hover {
     height: auto;
     width: 200px;
     padding: 40px;
-    background-color: #301e1c;        
+    background-color: #453024;        
     border: 2px dotted #6f8ea7;
-    box-shadow: 0 0 0 10px #301e1c;
+    box-shadow: 0 0 0 10px #453024;
 
 }
 
