@@ -24,21 +24,16 @@
     </div>
 </header>
 
-  <div class="grid">
+<p class="questions">
+  Questions Asked:<br>
+  1. Do you believe clothes have souls?<br>
+  2. As you look through your thrifted pieces, what kind of person do you picture having owned them before?<br>
+  3. How can mending thrifted clothes alter the value and the connection we feel to what we wear?
+</p>
 
-   </div>
+<div class="grid flex-grid">
 
-<!-- this is for answer squares-->
-<section class="question-block">
-  <h3>Question 1:</h3>
-  <div class="answers-grid" id="q1-grid"></div>
-</section>
-
-<section class="question-block">
-  <h3>Question 2:</h3>
-  <div class="answers-grid" id="q2-grid"></div>
-</section>
-
+</div>
 
 <!-- ****************************************************************************
 Below is javascript for connecting your google sheet to autopopulate the HTML-->
@@ -75,8 +70,6 @@ data.forEach(entry => {
     console.error("Sheet failed to load:", error);
   });
 </script>
-
-<!--  below is putting them into squares javascript-->
 
 
 </body>

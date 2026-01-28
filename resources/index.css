@@ -1,7 +1,5 @@
-/*  The * below is used as a universal selector, so it creates default settings for your site */
 * {
     font-size: 12pt;
-    line-height: 40pt;
     font-family: 'Times New Roman', Times, serif;
     color: #6f8ea7;
 
@@ -21,8 +19,7 @@
 }
 
 #image-archive header{
-    border-bottom: 4px dotted #f0e3d7; /* color + thickness */
-
+    border-bottom: 4px dotted #f0e3d7; 
 }
 
 h1{
@@ -41,8 +38,8 @@ h1{
     display: flex;  
     width: 60%;
     margin-left: 40px;
-    line-height: 1.6; /* more space between lines */
-    margin-bottom: 17px; /* space between paragraphs */
+    line-height: 1.6;
+    margin-bottom: 17px; 
 }
 
 .container div {
@@ -58,13 +55,13 @@ header ul {
     justify-content: center;
     gap: 190px;
     padding: 0;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 header {
-  border-bottom: 4px dotted #3a1c18; /* color + thickness */
-  padding-bottom: 1px; /* space between nav and line */
-  margin-bottom: 40px;  /* space below the line */
+  border-bottom: 4px dotted #3a1c18; 
+  padding-bottom: 1px; 
+  margin-bottom: 40px;  
 }
 
 header a {
@@ -92,12 +89,12 @@ header a:hover {
 }
 
 .frame-middle {
-    background-color: #ceafaa; /* mid tone */
+    background-color: #ceafaa; 
     padding: 14px;
 }
 
 .frame-inner {
-    background-color: #f0e3d7; /* light */
+    background-color: #f0e3d7; 
     padding: 10px;
 }
 
@@ -107,7 +104,7 @@ header a:hover {
 
 
 .frame-inner {
-    position: relative; /* anchors the caption to the image */
+    position: relative; /* caption to the image */
 }
 
 .frame-inner img {
@@ -118,7 +115,7 @@ header a:hover {
 
 .image-caption {
     position: absolute;
-    top: -100px;              /* puts it ABOVE the image */
+    top: -100px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
@@ -127,7 +124,41 @@ header a:hover {
     white-space: nowrap
 }
 
-/* code below is for stories tab for answer squares */
+.flex-grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;       
+    justify-content: center;
 
+}
+
+.flex-grid section {
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    height: auto;
+    width: 200px;
+    padding: 40px;
+    background-color: #301e1c;        
+    border: 2px dotted #6f8ea7;
+    box-shadow: 0 0 0 10px #301e1c;
+
+}
+
+.flex-grid section p {
+    color: #91a9bd; 
+    margin: 5px 0;   
+    line-height: 1.4;
+}
+
+.questions{
+    font-size: 17pt;
+    display: flex;  
+    width: 60%;
+    margin-left: 40px;
+    line-height: 1.6;
+    margin-bottom: 50px; 
+}
 
 
