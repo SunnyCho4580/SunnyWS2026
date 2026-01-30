@@ -6,7 +6,7 @@
 }
 
 .pink-page {
-    background-color: #fbf2ea;
+    background-color: #fbf5ef;
 }
 
 
@@ -84,7 +84,7 @@ header a:hover {
 .text-image img {
     width: 400px; 
     height: auto;
-    background-color: #301e1c; 
+    background-color: #453024; 
     padding: 30px;        
 }
 
@@ -124,32 +124,34 @@ header a:hover {
     white-space: nowrap
 }
 
-.flex-grid{
+.flex-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    gap: 40px;       
+    width:100%;
+    gap: 60px;
     justify-content: center;
-
+    align-items: center;  
 }
 
 .flex-grid section {
-    display: flex;
+    display: flex;              
     flex-direction: column;      
-    justify-content: center;     
-    height: auto;
-    width: 200px;
-    padding: 40px;
+    justify-content: center;    
+    width: 370px;               
+    padding: 20px;           
     background-color: #453024;        
     border: 2px dotted #6f8ea7;
     box-shadow: 0 0 0 10px #453024;
-
+    box-sizing: border-box;    
+    word-wrap: break-word;    
 }
+
 
 .flex-grid section p {
     color: #91a9bd; 
     margin: 5px 0;   
     line-height: 1.4;
+    font-size: 18pt;
 }
 
 .questions{
