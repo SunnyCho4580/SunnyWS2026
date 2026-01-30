@@ -25,98 +25,25 @@
 </header>
 
 
-<p>THIS WILL HAVE MY IMAGES.</p>
 
-<section>
-  <p>Images:</p>
-</section>
-
-  <section class="grid">
-       </section>
-          
-
-      
-       <script>
-console.log('JS is loaded');
-
-document.addEventListener("touchstart", function() {}, true);
-
-// Are.na's base API url
-const api = 'https://api.are.na/v2/channels/';
-const channel = 'thrifted-second-hand-clothing'; //add your channel name string in the url here here
-const grid_el = document.querySelector('.grid');
-
-// Track the current page and whether data is being fetched
-let page = 1;
-const perPage = 100;
-let isFetching = false;
-let moreDataAvailable = true;
-
-// Function to fetch a single page of items
-async function fetchItems(page, perPage) {
-   const response = await fetch(`${api}${channel}/contents?direction=desc&per=${perPage}&page=${page}`);
-   const data = await response.json();
-   return data.contents;
-}
-
-// Function to render items to the grid
-function renderItems(items) {
-   items.forEach((item) => {
-       let block_el = document.createElement('div');
-       block_el.classList.add('blocks');
-
-       if (item.class === 'Text') {
-           block_el.innerHTML = item.content_html;
-       } else if (item.class === 'Image') {
-           block_el.innerHTML = `<img src="${item.image.display.url}">`;
-           block_el.classList.add('image');
-       }
-
-       // Append block to document
-       grid_el.appendChild(block_el);
-   });
-}
-
-// Function to handle infinite scroll
-async function handleScroll() {
-   if (isFetching || !moreDataAvailable) return;
-
-   // Check if the user scrolled near the bottom of the page
-   const scrollTop = window.scrollY || document.documentElement.scrollTop;
-   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-   const documentHeight = document.documentElement.scrollHeight;
-
-   if (scrollTop + windowHeight >= documentHeight - 100) {
-       isFetching = true;
-       console.log(`Fetching page ${page}...`);
-      
-       const items = await fetchItems(page, perPage);
-       if (items.length > 0) {
-           renderItems(items);
-           page++;
-       } else {
-           moreDataAvailable = false; // No more data to fetch
-       }
-
-       isFetching = false;
-   }
-}
-
-// Initial fetch for the first page
-fetchItems(page, perPage).then((items) => {
-   renderItems(items);
-   page++;
-});
-
-// Attach the scroll event listener
-window.addEventListener('scroll', handleScroll);
-
-       </script>
-
-
-
-
-
+<div class="row">
+  <div class="column">
+    <img src="./resources/images/bootshigh.jpg" alt="boots">
+    <img src="./resources/images/floralskirt.jpg" alt="floral skirt">
+    <img src="./resources/images/redtop.jpg" alt="red top">
+  </div>
+  <div class="column">
+    <img src="./resources/images/denimskirt.jpg" alt="denim skirt">
+    <img src="./resources/images/top.jpg" alt="top">
+    <img src="./resources/images/boots.jpg" alt="boots">
+  </div>
+  <div class="column">
+    <img src="./resources/images/belt.jpg" alt="belt">
+  </div>  
+ <div class="column">
+    <img src="./resources/images/skirt.jpg" alt="skirt">
+    <img src="./resources/images/tealflats.jpg" alt="teal flats">
+  </div>    
 
    </body>
 </html>
