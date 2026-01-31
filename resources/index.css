@@ -187,7 +187,6 @@ header a:hover {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -195,10 +194,20 @@ header a:hover {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.p2 {
+    text-align: left;
+    font-size: 22px;
+    color: #6f8ea7;
+    display: flex;  
+    width: 60%;
+    margin-left: 40px;
+    line-height: 1.6;
+    margin-bottom: 17px; 
 }
