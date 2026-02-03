@@ -25,11 +25,12 @@ color: #6f8ea7;
 
 h1{
     color: #3a1c18;
-    font-size: 110px;
+    font-size: 140px;
     text-align: center;
     font-family: "snell-roundhand-lt-std", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 20px;
 }
 
 .landing-page{
@@ -50,7 +51,7 @@ h1{
     display: flex;  
     width: 60%;
     margin-left: 40px;
-    line-height: 1.6;
+    line-height: 1.9;
     margin-bottom: 17px; 
 }
 
@@ -73,7 +74,7 @@ header ul {
 header {
   border-bottom: 4px dotted #3a1c18; 
   padding-bottom: 1px; 
-  margin-bottom: 40px;  
+  margin-bottom: 20px;
 }
 
 header a {
@@ -126,7 +127,7 @@ header a:hover {
 
 .image-caption {
     position: absolute;
-    top: -100px;
+    top: -70px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
